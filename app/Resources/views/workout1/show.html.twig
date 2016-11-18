@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Workout1</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ workout1.id }}</td>
+            </tr>
+            <tr>
+                <th>Occurrencedate</th>
+                <td>{% if workout1.occurrenceDate %}{{ workout1.occurrenceDate|date('Y-m-d') }}{% endif %}</td>
+            </tr>
+            <tr>
+                <th>Activity</th>
+                <td>{{ workout1.activity }}</td>
+            </tr>
+            <tr>
+                <th>Hours</th>
+                <td>{{ workout1.hours }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('workout1_index') }}">Back to the list</a>
+        </li>
+        <li>
+            <a href="{{ path('workout1_edit', { 'id': workout1.id }) }}">Edit</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}

@@ -1,0 +1,38 @@
+erik_crud:
+    resource: "@ErikCRUDBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+erik_entity:
+    resource: "@ErikEntityBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+eriktwig:
+    resource: "@ErikTwigBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+erik_workout3:
+    resource: "@ErikWorkout3Bundle/Controller/"
+    type:     annotation
+    prefix:   /bundle-level-route
+
+erik_response:
+    resource: "@ErikResponseBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+erik_workout2:
+    resource: "@ErikWorkout2Bundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+erik_workout:
+    resource: "@ErikWorkoutBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation

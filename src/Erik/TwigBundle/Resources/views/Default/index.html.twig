@@ -1,0 +1,23 @@
+this is  a variable {{name|upper}}.
+
+the length of array: {{workouts|length}}
+
+{# if statement in twig #}
+
+{% if age == 100 %}
+this will be shown if the age is 99
+{% elseif age == 0 %}
+ahohoisadda
+{% else  %}
+something else
+{% endif %}
+
+{# loops in twig #}
+{% for workout in workouts  if workout.hours > 1 %}
+<div>
+{{workout.activity}}
+</div>
+{% endfor %}
+
+{# links in twig #}
+<a href="{{path('twig_index')}}">a link</a>

@@ -1,0 +1,4 @@
+services:
+#    erik_workout2.example:
+#        class: Erik\Workout2Bundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
